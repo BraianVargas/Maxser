@@ -1,0 +1,21 @@
+body{
+    background-color: yellow;
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.734), rgba(32, 14, 194, 0.474), rgba(22, 14, 100, 0.474)), url("../images/sorteos.webp");
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    font-size: 14px;
+    color: black;
+}
+.prev{
+    height: 150px;
+    max-width: 500px;
+}
+.next{
+    height: 150px;
+}
+.vigente{
+    height: 150px;
+}

@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width= 100%, initial-scale=1.0, maximum-scale=2.0">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="icon" type="image/ico" href="images/icono.ico">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha384-rY/jv8mMhqDabXSo+UCggqKtdmBfd3qC2/KvyTDNQ6PcUJXaxK1tMepoQda4g5vB" crossorigin="anonymous">
+  </script>
+  <title>Maxser</title>
+</head>
+
+<body style="min-width: 350px;">
+  <script>
+    AOS.init();
+  </script>
+
+  <!-- Inicio barra navegación -->
+  <!--<div class="sticky-top"-->
+  <!--  style="z-index:2000; width: 100%; height: 0.8rem; background: linear-gradient(90deg, rgb(100, 91, 83) 0%, rgb(235, 82, 82) 18.23%, rgb(247, 143, 47) 34.37%, rgb(244, 193, 81) 48.96%, rgb(82, 187, 118) 66.15%, rgb(38, 165, 215) 82.29%, rgb(224, 105, 183) 100%);">-->
+  <!--</div>-->
+  <div id="cabecera mt-2 mb-0">
+    <!--<div class="js-pride-month-gradient" style="width: 100%; height: 0.8rem; background: linear-gradient(90deg, rgb(100, 91, 83) 0%, rgb(235, 82, 82) 18.23%, rgb(247, 143, 47) 34.37%, rgb(244, 193, 81) 48.96%, rgb(82, 187, 118) 66.15%, rgb(38, 165, 215) 82.29%, rgb(224, 105, 183) 100%);"></div>-->
+    <video class="d-none d-md-block" id="video" style="zoom: 100%;" loop autoplay preload muted playsinline
+      src="./video/cuotas fijas.mp4"></video>
+    
+    <!--<img src="images/fondo-cel.webp" alt="" class="d-none d-md-block" id="video" style="zoom: 100%;" srcset="">-->
+
+
+    <!-- inicio formato cel -->
+    <div class="container-fluid d-block d-lg-none bg-none fixed-top overflow-show">
+      <div class="js-pride-month-gradient"
+        style="width: 100%; height: 0.8rem; background: linear-gradient(90deg, rgb(100, 91, 83) 0%, rgb(235, 82, 82) 18.23%, rgb(247, 143, 47) 34.37%, rgb(244, 193, 81) 48.96%, rgb(82, 187, 118) 66.15%, rgb(38, 165, 215) 82.29%, rgb(224, 105, 183) 100%);">
+      </div>
+      <button class="btn m-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
+        aria-controls="offcanvasWithBothOptions">
+        <i class='bx br-15 bg-formato-cel white p-3 bx-menu-alt-left ' style="font-size: 95%;">
+          <a style="text-decoration: none;">Menú</a>
+        </i>
+      </button>
+      <div class="offcanvas offcanvas-start bg-none" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+        aria-labelledby="offcanvasWithBothOptionsLabel" style="background-color: #0000; width: 300px;">
+        <div class="offcanvas-header bg-formato-cel">
+          <h3 class="offcanvas-title orange" id="offcanvasWithBothOptionsLabel">
+            Maxser
+          </h3>
+        </div>
+        <div class="offcanvas-body bg-formato-cel">
+          <ul class="nav br-15 bg-none p-2 navbar-menu d-inline-block position-absolute top-auto left-0">
+            <li class="nav-item p-3">
+              <i class='bx bx-home cl-aqua' style="font-size: larger;">
+                <a target="" class="text-white" style="text-decoration: none;" href="http://www.maxser.com.ar">
+                  Inicio</a>
+              </i>
+            </li>
+            <li class="nav-item p-3">
+              <i class='bx bxs-user-detail cl-aqua' style="font-size: larger;">
+                <a target="_blank" class="text-white" style="text-decoration: none;" href="about-us.html"> ¿Quienes
+                  Somos?</a>
+              </i>
+            </li>
+            <li class="nav-item p-3">
+              <i class='bx bxl-whatsapp cl-aqua' style="font-size: larger;">
+                <a target="_blank" class="text-white" style="text-decoration: none;"
+                  href="https://api.whatsapp.com/send?phone=542644682062"> Ventas</a>
+              </i>
+            </li>
+            <li class="nav-item p-3">
+              <i class='bx bxs-business cl-aqua' style="font-size: larger;">
+                <a target="_blank" class="text-white" style="text-decoration: none;"
+                  href="https://wa.me/message/SXEDLC4LIH26I1"> Ventas a empresas</a>
+              </i>
+            </li>
+            <li class="nav-item p-3">
+              <i class='bx bx-support cl-aqua' style="font-size: larger;">
+                <a target="_blank" class="text-white" style="text-decoration: none;"
+                  href="https://api.whatsapp.com/send?phone=542645320318">
+                  Servicio técnico</a>
+              </i>
+            </li>
+            <li class="nav-item p-3">
+              <i class='bx bxs-contact cl-aqua' style="font-size: larger;">
+                <a class="text-white" style="text-decoration: none;" href="index.html#contactos"> Contactos</a>
+              </i>
+            </li>
+            <li class="nav-item p-3">
+              <i class='bx bxs-calendar-event cl-aqua' style="font-size: larger;">
+                <a target="_blank" class="text-white" style="text-decoration: none;" href="eventos.html"> Eventos</a>
+              </i>
+            </li>
+            <li class="a-tienda p-3 ">
+              <i class='bx bxs-cart cl-aqua' style="font-size: larger;">
+                <a class="m-2 p-2  white"
+                  style="border-radius: 150px; border: solid 2px #fe9000; box-shadow: 0px 0px 30px #FE9000d3; background-color: #e9650e;"
+                  href="https://maxserstore.com.ar/"><i class="bi bi-shop"></i> Maxser Store</a>
+              </i>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- End formato cel -->
+
+    <!-- inicio formato pc -->
+    <nav class="navbar-expand-lg sticky-top d-block">
+      <div class="container-fluid">
+        <div class="container">
+          <div class="collapse nav navbar-collapse white fixed-top div-menu" id="menu">
+            <a href="index.html" class="fs-2 ml-3 text-left">
+              <img src="images/LOGO.png" class="img-logo ml-4 img-fluid d-block" alt="" srcset="">
+            </a>
+            <ul class="nav br-15 bg-md-lb p-2.4 navbar-menu position-absolute d-flex justify-content-end top-auto end-0 w-80">
+              <li class="nav-item">
+                <a class="m-2 p-2 white" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a target="_blank" class="m-2 p-2 white" href="about-us.html">¿Quienes Somos?</a>
+              </li>
+
+              <li class="nav-item br-10">
+                <div class="dropdown">
+                  <div class="dropdown-toggle nav-item" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" >
+                    <a><i class="bi bi-whatsapp"></i> WhatsApp</a>
+                  </div>
+                
+                  <ul class="dropdown-menu mt-3 bg-wsp" >
+                    <li class="nav-item">
+                      <a target="_blank" class="dropdown-item" href="https://api.whatsapp.com/send?phone=542644682062">
+                        Ventas Online
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a target="_blank" class="dropdown-item" href="https://api.whatsapp.com/send?phone=542645320318">
+                        Servicio Técnico
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a target="_blank" class="dropdown-item" href="https://wa.me/message/SXEDLC4LIH26I1">Empresas</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <a class="m-2 p-2 white" href="eventos.html">Eventos</a>
+              </li>
+              <li class="nav-item a-tienda">
+                <a class="m-2 p-2  white flicker-fast"
+                  style="border-radius: 150px; border: solid 2px #fe9000; box-shadow: 0px 0px 30px #FE9000d3; background-color: #e9650e;"
+                  href="https://maxserstore.com.ar/"><i class="bi bi-shop"></i> Maxser Store</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- end formato pc -->
+  </div>
+  <!-- End barra navegación -->
+  <div class="col-12 d-block d-md-none m-auto"
+    style="height: 80vh; zoom:70%; background-image:url('/images/fondo-cel.webp'); background-repeat: no-repeat; background-position:center">
+    <!-- <img src="/images/fondo-header.webp" class="text-center m-auto" alt="" srcset=""> -->
+  </div>
+
+  <div class="container-fluid bg-black" style="height: 100px;">
+
+  </div>
+
+  <!-- Inicio Maxsoft -->
+  <div class="container-fluid p-5" id="maxsoft">
+    <div class="container row justify-content-end m-auto p-5 d-flex">
+      <div data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine" class="col-12 col-md-10">
+        <img src="./images/maxsoft/logo.webp" class="m-auto col-12 col-md-10" alt="maxsoft-logo"
+          style="min-width: 200px; max-width: 550px;">
+        <p>
+          El mejor sistema de gestión de inventario, ventas y servicios para tu empresa o negocio.
+        </p>
+      </div>
+      <div data-aos="zoom-in" data-aos-offset="300" data-aos-easing="ease-in-sine" class="col-12 col-md-2 alin-items-center">
+        <a target="_blank" href="enterprise.html" style="border: solid 2px #fe9000; background-color: #e9650e; margin-top: 70px;" 
+          class="btn">
+          Más info!
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- End Maxsoft -->
+  <!-- Inicio Carrousel -->
+  <div class="bg-black">
+    <div id="carouselExampleDark" class="carousel carousel-dark slide d-none d-md-block" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+
+      </div>
+
+      <!-- Controles de slider -->
+      <div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <i class='bx bx-left-arrow-alt' aria-hidden="true"></i>
+          <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <i class='bx bx-right-arrow-alt' aria-hidden="true"></i>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- End controles de slider -->
+
+      <!-- Inicio contenido carrousel -->
+      <div class="carousel-inner c-inner-index pt-2">
+        <h1 class="white text-center pt-5">Nuestros Productos</h1>
+        <div class="carousel-item container-fluid active" data-bs-interval="5000">
+          <div class="div-interior row">
+            <div class="col-md-3 shadow image-box ml-2">
+              <a href="https://maxserstore.com.ar/gabinete/">
+                <img src="images/carousel/gabinetes.webp" class="imagen-car d-block" alt="...">
+              </a>
+              <h2>Gabinetes</h2>
+            </div>
+            <div class="col-md-3 shadow image-box ml-2">
+              <a href="https://maxserstore.com.ar/motherboard/">
+                <img src="images/carousel/mother.webp" class="imagen-car d-block" alt="...">
+              </a>
+              <h2>Placas Madres</h2>
+            </div>
+            <div class="col-md-3 shadow image-box ml-2">
+              <a href="https://maxserstore.com.ar/ram/">
+                <img src="images/carousel/ram.webp" class="imagen-car d-block" alt="...">
+              </a>
+              <h2>Memorias RAM</h2>
+            </div>
+            <div class="col-md-3 shadow image-box ml-2">
+              <a href="https://maxserstore.com.ar/search/?q=procesador">
+                <img src="images/carousel/micro.webp" class="imagen-car d-block" alt="...">
+              </a>
+              <h2>Microprocesadores</h2>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item container-fluid " data-bs-interval="4000">
+          <div class="div-interior row">
+            <div class="col-md-3 shadow image-box ml-2">
+              <a href="https://maxserstore.com.ar/teclado/">
+                <img src="images/carousel/Perifericos.webp" class="imagen-car d-block" alt="...">
+              </a>
+              <h2>Perifericos</h2>
+            </div>
+            <div class="col-md-3 shadow image-box ml-2">
+              <a href="https://maxserstore.com.ar/placa-de-video/">
+                <img src="images/carousel/video.webp" class="imagen-car d-block" alt="...">
+              </a>
+              <h2>Placas de video</h2>
+            </div>
+            <div class="col-md-3 shadow image-box ml-2 text-align-center">
+              <a href="https://maxserstore.com.ar/monitor/">
+                <img src="images/carousel/monitor.webp" class="imagen-car d-block" alt="...">
+              </a>
+              <h2>Monitores</h2>
+            </div>
+            <div class="col-md-3 shadow image-box ml-2">
+              <a href="https://www.maxserstore.com.ar/cooler/">
+                <img src="images/carousel/refrig.webp" class="imagen-car d-block" alt="...">
+              </a>
+              <h2>Refrigeración</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item container-fluid " data-bs-interval="3000">
+          <div class="div-interior row">
+            <div class="col-md-3 shadow image-box ml-2">
+              <a href="https://www.maxserstore.com.ar/notebook/">
+                <img src="images/carousel/notebooks.webp" class="imagen-car d-block" alt="...">
+              </a>
+              <h2>Notebooks</h2>
+            </div>
+            <div class="col-md-3 shadow image-box ml-2 text-align-center">
+              <a href="https://www.maxserstore.com.ar/pc-armada/">
+                <img src="images/carousel/armada.webp" class="imagen-car d-block" alt="...">
+              </a>
+              <h2>PC Armada</h2>
+            </div>
+            <div class="col-md-3 shadow image-box ml-2">
+              <a href="https://www.maxserstore.com.ar/search/?q=silla">
+                <img src="images/carousel/sillas.webp" class="imagen-car d-block" alt="...">
+              </a>
+              <h2>Sillas</h2>
+            </div>
+            <div class="col-md-3 shadow image-box ml-2">
+              <a href="https://www.maxserstore.com.ar/escritorios/">
+                <img src="images/carousel/escritorio.webp" class="imagen-car d-block" alt="...">
+              </a>
+              <h2>Escritorios</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End contenido carrousel -->
+    </div>
+
+
+    <!-- INICIO FORMATO MOVIL -->
+    <div id="carouselMovil" class="carousel carousel-dark slide d-block d-md-none" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselMovil" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselMovil" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselMovil" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselMovil" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselMovil" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        <button type="button" data-bs-target="#carouselMovil" data-bs-slide-to="5" aria-label="Slide 6"></button>
+        <button type="button" data-bs-target="#carouselMovil" data-bs-slide-to="6" aria-label="Slide 7"></button>
+        <button type="button" data-bs-target="#carouselMovil" data-bs-slide-to="7" aria-label="Slide 8"></button>
+        <button type="button" data-bs-target="#carouselMovil" data-bs-slide-to="8" aria-label="Slide 9"></button>
+        <button type="button" data-bs-target="#carouselMovil" data-bs-slide-to="9" aria-label="Slide 10"></button>
+        <button type="button" data-bs-target="#carouselMovil" data-bs-slide-to="10" aria-label="Slide 11"></button>
+        <button type="button" data-bs-target="#carouselMovil" data-bs-slide-to="11" aria-label="Slide 12"></button>
+      </div>
+
+      <!-- Controles de slider -->
+      <div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselMovil" data-bs-slide="prev">
+          <i class='bx bx-left-arrow-alt' aria-hidden="true"></i>
+          <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselMovil" data-bs-slide="next">
+          <i class='bx bx-right-arrow-alt' aria-hidden="true"></i>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- End controles de slider -->
+
+      <!-- Inicio contenido carrousel -->
+      <div class="carousel-inner c-inner-index">
+        <h1 class="white text-center pt-3">Nuestros Productos</h1>
+        <div class="carousel-item container-fluid active" data-bs-interval="5000">
+          <div class="div-interior row">
+            <div class="col-md-3 shadow bx-img-movil">
+              <a href="https://maxserstore.com.ar/gabinete/">
+                <img src="images/carousel/gabinetes.webp" class="image-car-movil m-auto d-block" alt="...">
+              </a>
+              <h2>Gabinetes</h2>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item container-fluid" data-bs-interval="5000">
+          <div class="col-md-3 shadow bx-img-movil">
+            <a href="https://maxserstore.com.ar/motherboard/">
+              <img src="images/carousel/mother.webp" class="image-car-movil m-auto d-block" alt="...">
+            </a>
+            <h2>Placas Madres</h2>
+          </div>
+        </div>
+        <div class="carousel-item container-fluid" data-bs-interval="5000">
+          <div class="col-md-3 shadow bx-img-movil ml-2">
+            <a href="https://maxserstore.com.ar/ram">
+              <img src="images/carousel/ram.webp" class="image-car-movil m-auto d-block" alt="...">
+            </a>
+            <h2>Memorias RAM</h2>
+          </div>
+        </div>
+        <div class="carousel-item container-fluid" data-bs-interval="5000">
+          <div class="col-md-3 shadow bx-img-movil ml-2">
+            <a href="https://maxserstore.com.ar/search/?q=procesador">
+              <img src="images/carousel/micro.webp" class="image-car-movil m-auto d-block" alt="...">
+            </a>
+            <h2>Microprocesadores</h2>
+          </div>
+        </div>
+        <div class="carousel-item container-fluid" data-bs-interval="5000">
+          <div class="div-interior row">
+            <div class="col-md-3 shadow bx-img-movil ml-2">
+              <a href="https://maxserstore.com.ar/teclado/">
+                <img src="images/carousel/Perifericos.webp" class="image-car-movil m-auto d-block" alt="...">
+              </a>
+              <h2>Perifericos</h2>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item container-fluid" data-bs-interval="5000">
+          <div class="div-interior row">
+            <div class="col-md-3 shadow bx-img-movil ml-2">
+              <a href="https://maxserstore.com.ar/placa-de-video/">
+                <img src="images/carousel/video.webp" class="image-car-movil m-auto d-block" alt="...">
+              </a>
+              <h2>Placas de video</h2>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item container-fluid" data-bs-interval="5000">
+          <div class="div-interior row">
+            <div class="col-md-3 shadow bx-img-movil ml-2 text-align-center">
+              <a href="https://maxserstore.com.ar/monitor/">
+                <img src="images/carousel/monitor.webp" class="image-car-movil m-auto d-block" alt="...">
+              </a>
+              <h2>Monitores</h2>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item container-fluid" data-bs-interval="5000">
+          <div class="div-interior row">
+            <div class="col-md-3 shadow bx-img-movil ml-2">
+              <a href="https://www.maxserstore.com.ar/cooler/">
+                <img src="images/carousel/refrig.webp" class="image-car-movil m-auto d-block" alt="...">
+              </a>
+              <h2>Refrigeración</h2>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item container-fluid" data-bs-interval="5000">
+          <div class="div-interior row">
+            <div class="col-md-3 shadow bx-img-movil ml-2">
+              <a href="https://www.maxserstore.com.ar/notebook/">
+                <img src="images/carousel/notebooks.webp" class="image-car-movil m-auto d-block" alt="...">
+              </a>
+              <h2>Notebooks</h2>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item container-fluid" data-bs-interval="5000">
+          <div class="div-interior row">
+            <div class="col-md-3 shadow bx-img-movil ml-2 text-align-center">
+              <a href="https://www.maxserstore.com.ar/pc-armada/">
+                <img src="images/carousel/armada.webp" class="image-car-movil m-auto d-block" alt="...">
+              </a>
+              <h2>PC Armada</h2>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item container-fluid" data-bs-interval="5000">
+          <div class="div-interior row">
+            <div class="col-md-3 shadow bx-img-movil ml-2">
+              <a href="https://www.maxserstore.com.ar/search/?q=silla">
+                <img src="images/carousel/sillas.webp" class="image-car-movil m-auto d-block" alt="...">
+              </a>
+              <h2>Sillas</h2>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item container-fluid" data-bs-interval="5000">
+          <div class="div-interior row">
+            <div class="col-md-3 shadow bx-img-movil ml-2">
+              <a href="https://www.maxserstore.com.ar/escritorios/">
+                <img src="images/carousel/escritorio.webp" class="image-car-movil m-auto d-block" alt="...">
+              </a>
+              <h2>Escritorios</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FIN FORMATO MOVIL -->
+
+  </div>
+  <!-- End Carrousel -->
+
+
+  <!-- Inicio Info-->
+  <div class="container-fluid pt-5 pb-5 d-flex bg-black">
+    <div class="container row justify-content-center p-0 m-auto cont-info">
+      <div data-aos="zoom-in-up" data-aos-offset="400" data-aos-easing="ease-in-sine"
+        class="col-md-3 col-sm-12 w-md-10 m-0 p-2 text-center" id="info-horarios-pagos">
+        <i class='cl-aqua bx bx-sun'></i>
+        <h2 class="cl-lb"> 09:00hs </h2>
+        <p>Horario de apertura</p>
+      </div>
+      <div data-aos="zoom-in-up" data-aos-offset="400" data-aos-easing="ease-in-sine"
+        class="col-md-3 col-sm-12 w-md-10 m-0 p-2 text-center" id="info-horarios-pagos">
+        <i class='cl-aqua bx bx-credit-card'></i>
+        <h2 class="cl-lb"> Comprá </h2>
+        <p>Con todos los medios de pagos </p>
+      </div>
+      <div data-aos="zoom-in-up" data-aos-offset="400" data-aos-easing="ease-in-sine"
+        class="col-md-3 col-sm-12 w-md-10 m-0 p-2 text-center" id="info-horarios-pagos">
+        <i class='cl-aqua bx bx-star'></i>
+        <h2 class="cl-lb"> 15 Años</h2>
+        <p>Brindando el <br> MAX-imo SER-vicio</p>
+      </div>
+      <div data-aos="zoom-in-up" data-aos-offset="400" data-aos-easing="ease-in-sine"
+        class="col-md-3 col-sm-12 w-md-10 m-0 p-2 text-center" id="info-horarios-pagos">
+        <i class='cl-aqua bx bx-moon'></i>
+        <h2 class="cl-lb"> 21:00hs </h2>
+        <p>Horario de Cierre</p>
+      </div>
+    </div>
+  </div>
+  <!-- End Info-->
+  <!-- Inicio Sorteos -->
+  <!-- <div class="container-fluid p-5" id="sorteos">
+    <div class="container row justify-content-end m-auto p-5">
+      <div data-aos="fade-right" data-aos-offset="350" data-aos-easing="ease-in-sine" class="col-12 col-md-10">
+        <h2>SORTEOS</h2>
+        <p>
+          Enterate y participá de todos nuestros sorteos en esta sección.
+        </p>
+      </div>
+      <div data-aos="zoom-in" data-aos-offset="300" data-aos-easing="ease-in-sine" class="col-12 col-md-2">
+        <a target="_blank" href="sorteos/index.html" class="btn btn-primary">
+          Ver Mas...
+        </a>
+      </div>
+    </div>
+  </div> -->
+  <!-- End Sorteos -->
+
+  
+  <div class="container-fluid bg-black" style="height: 100px;">
+
+  </div>
+  <!-- Inicio Servicio Técnico -->
+  <div class="container-fluid p-5" id="Servicio">
+    <div class="container row justify-content-end m-auto p-5">
+      <div data-aos="fade-right" data-aos-offset="400" data-aos-easing="ease-in-sine" class="col-12 col-md-10">
+        <h2>SERVICIO TÉCNICO</h2>
+        <p>
+          Contamos con técnicos especializados en la materia que te ayudarán con los problemas de tu equipo
+        </p>
+      </div>
+      <div data-aos="zoom-in" data-aos-offset="300" data-aos-easing="ease-in-sine" class="col-12 col-md-2">
+        <a target="_blank" href="https://drive.google.com/file/d/1gg4PMMwW7P7Q1kuYmok6Nz2iDeVQf3Su/preview"
+          class="btn btn-primary">
+          Políticas de trabajo
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- End Servicio Técnico -->
+  <div class="container-fluid bg-black" style="height: 100px;">
+
+  </div>
+  <!-- Inicio Ventas y garantias -->
+  <div class="container-fluid p-5" id="ventas">
+    <div class="container row justify-content-end m-auto p-5">
+      <div data-aos="zoom-out-down" data-aos-offset="400" data-aos-easing="ease-in-sine" class="col-12 col-md-10">
+        <h2>Politicas de garantias</h2>
+        <p>
+          Las garantias proporcionadas por nuestro local son limitadas.
+        </p>
+      </div>
+      <div data-aos="zoom-out-up" data-aos-offset="300" data-aos-easing="ease-in-sine" class="col-12 col-md-2">
+        <a target="_blank" href="https://drive.google.com/file/d/13YHCCOWZFtM72qM6PSIvw6BZAXiLikZ-/view"
+          class="btn btn-primary">
+          Políticas de garantías
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- End Ventas y garantias -->
+  <div class="container-fluid bg-black" style="height: 100px;">
+
+  </div>
+  <!-- Inicio ubicación -->
+  <div class="container-fluid ubic p-1 p-md-5 m-0" id="ubicacion">
+    <div data-aos="fade-in" data-aos-offset="450" data-aos-easing="ease-out-sine" class=" container row m-auto">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5554.0507652152055!2d-68.5291790391953!3d-31.572807984770506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x178904cc7e8269fd!2sMAXSER%20Tecnolog%C3%ADa%20sin%20limites!5e0!3m2!1ses!2sar!4v1632228156924!5m2!1ses!2sar"
+        style="width: 80%; min-width:300px;" height="350px" class="col-12 pt-3 pb-3 rounded-3 m-0 m-md-auto"
+        allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </div>
+  <!-- End Ubicación -->
+
+  <!-- Inicio Redes -->
+  <div class="container-fluid bg-black p-2">
+    <div class="container row p-4 m-auto cont-redes">
+      <h2 class="m-auto col-sm-12 text-center p-4">Seguinos en nuestras Redes</h2>
+      <div class="m-auto col-md-6 col-sm-12 mb-3 justify-content-center text-center div-redes">
+        <p>
+          Seguinos
+          <br>
+          <br>
+          <div class="row">
+            <div data-aos="zoom-in" data-aos-offset="300" data-aos-easing="ease-in-sine" class="col-md-2">
+              <a href="https://www.facebook.com/MaxserSJ"><i class='m-0 bx bxl-facebook'></i></a>
+            </div>
+            <div data-aos="zoom-in" data-aos-offset="300" data-aos-easing="ease-in-sine" class="col-md-2">
+              <a href="https://www.instagram.com/maxsersj/"><i class='m-0 bx bxl-instagram'></i></a>
+            </div>
+            <div data-aos="zoom-in" data-aos-offset="300" data-aos-easing="ease-in-sine" class="col-md-2">
+              <a href="https://www.youtube.com/channel/UCQIHugWJjopHZiHSmxsEpBQ"><i class='m-0 bx bxl-youtube'></i></a>
+            </div>
+            <div data-aos="zoom-in" data-aos-offset="300" data-aos-easing="ease-in-sine" class="col-md-2">
+              <a href=""><i class='m-0 bx bxl-telegram'></i></a>
+            </div>
+            <div data-aos="zoom-in" data-aos-offset="300" data-aos-easing="ease-in-sine" class="col-md-2">
+              <a href="https://www.twitch.tv/maxsersj"><i class='m-0 bx bxl-twitch'></i></a>
+            </div>
+            <div data-aos="zoom-in" data-aos-offset="300" data-aos-easing="ease-in-sine" class="col-md-2">
+              <a href="https://vm.tiktok.com/ZM8h7uTSF/"><i class='m-0 bx bxl-tiktok'></i></a>
+            </div>
+          </div>
+        </p>
+      </div>
+      <div class="mb-3 col-md-3 col-sm-12 justify-content-center text-center div-ventas">
+        <p>
+          Correo
+          <br>
+          <br>
+          <a style="color: #FE5000;" href="mailto:ventas@maxser.com.ar">
+            <p class="orange">ventas@maxser.com.ar</p>
+          </a>
+        </p>
+      </div>
+      <div class="mb-3 col-md-3 col-sm-12 justify-content-center text-center div-tel-fijo">
+        <p>
+          Teléfono
+          <br>
+          <br>
+          <p class="orange">(0264)-4282233</p>
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- End Redes -->
+
+  <!-- Inicio Mailer -->
+  <div class="container-fluid mailer pt-3 pb-5" id="">
+    <div class="container">
+      <div class="text-white mb-3 pb-3 fs-2 m-auto w-50 text-center">
+        <p>Dudas, consultas y reclamos</p>
+      </div>
+      <div class="input-group mt-3 w-50 m-auto">
+        <span class="input-group-text">Para:</span>
+        <input type="text" class="form-control" aria-label="Para:" placeholder="eshop@maxser.com.ar" value="eshop@maxser.com.ar" readonly>
+      </div><br>
+      <div class="mb-3 w-50 m-auto">
+        <label for="exampleFormControlInput1" class="form-label text-white">Direccion de correo</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="usuario@gmail.com">
+      </div><br>
+      <div class="mb-3 w-50 m-auto">
+        <label for="exampleFormControlTextarea1" class="form-label text-white">Motivo</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="7"></textarea>
+      </div>
+      
+      <div class="input-group mt-3 w-50 m-auto">
+        <input type="submit" class="form-control btn btn-orange">
+      </div> 
+    </div>
+    <div data-aos="fade-in" data-aos-offset="450" data-aos-easing="ease-out-sine" class="container row m-auto">
+      
+    </div>
+  </div>
+  <!-- End Mailer -->
+
+  <!-- Inicio Pie de Página -->
+  <div id="pie" class="container-fluid bg-black top-0 p-5">
+    <div class="container row m-auto">
+      <div class="col-sm-12 top-0 col-md-4 mb-3 justify-content-center text-center text-md-left">
+        <img class="" src="images/LOGO.png" alt="" srcset="">
+      </div>
+      <div class="col-sm-12 col-md-7 text-md-end text-center">
+        <p>Maxser© Todos los derechos reservados</p>
+      </div>
+      <div class="col-sm-12 col-md-1 text-md-end text-center justify-content-center">
+        <a href="http://qr.afip.gob.ar/?qr=t3lbnoEWWwu1o8GRvGLJCA,," target="_F960AFIPInfo"> <img class="m-auto"
+            style="width: 50px; height: auto;" src="./images/DATAWEB.jpg"> </a>
+      </div>
+    </div>
+  </div>
+  <!-- Fin Pie de Página -->
+
+
+  <div class="container-fluid bg-black">
+    <div class="row text-end">
+      <a target="_blank" href="https://bricode-sj.web.app/"
+        style="text-decoration: none; color: #FFF; font-size: small;">
+        Desarrollado con ❤ por BriCode | <strong>Contactar</strong>
+      </a>
+    </div>
+    <br>
+  </div>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159938883-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-159938883-1');
+  </script>
+  <!-- End Google Analytics -->
+  <script>
+    $(document).ready(function () {
+      var $cabecera = $('#menu');
+      var previousScroll = 0;
+      $(window).scroll(function (event) {
+        var scroll = $(this).scrollTop();
+
+        if (scroll > previousScroll && scroll > 40) {
+          $cabecera.addClass('bg-black');
+        } else {
+          $cabecera.removeClass('bg-black');
+        }
+        previousScroll = scroll;
+      });
+    });
+  </script>
+
+
+  <a href="https://www.google.com/maps/dir//MAXSER+Mendoza+Sur+2700+J5400+San+Juan/@-31.5711288,-68.5290699,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0x96813ff95ca35993:0x178904cc7e8269fd!2m2!1d-68.5290699!2d-31.5711288"
+    class=" btnUbic">
+    <i class="bi bi-geo-alt-fill m-auto"></i>
+    <i id="going">
+      Yendo!
+    </i>
+  </a>
+
+</body>
+
+</html>
