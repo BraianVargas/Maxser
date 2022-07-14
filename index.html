@@ -627,27 +627,49 @@
   <!-- End Redes -->
 
   <!-- Inicio Mailer -->
+  
+
   <div class="container-fluid mailer pt-3 pb-5" id="">
     <div class="container">
       <div class="text-white mb-3 pb-3 fs-2 m-auto w-50 text-center">
         <p>Dudas, consultas y reclamos</p>
       </div>
-      <div class="input-group mt-3 w-50 m-auto">
-        <span class="input-group-text">Para:</span>
-        <input type="text" class="form-control" aria-label="Para:" placeholder="eshop@maxser.com.ar" value="eshop@maxser.com.ar" readonly>
-      </div><br>
-      <div class="mb-3 w-50 m-auto">
-        <label for="exampleFormControlInput1" class="form-label text-white">Direccion de correo</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="usuario@gmail.com">
-      </div><br>
-      <div class="mb-3 w-50 m-auto">
-        <label for="exampleFormControlTextarea1" class="form-label text-white">Motivo</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="7"></textarea>
-      </div>
-      
-      <div class="input-group mt-3 w-50 m-auto">
-        <input type="submit" class="form-control btn btn-orange">
-      </div> 
+      <form action="" method="post">
+        <div class="input-group mt-3 w-50 m-auto">
+          <span class="input-group-text">Para:</span>
+          <select name="emailFor" id="" class="form-control">
+            <option value="eshop@maxser.com.ar">E-shop</option>
+            <option value="ventas@maxser.com.ar">Ventas</option>
+            <option value="matketing@maxser.com.ar">Marketing</option>
+            <option value="empresas@maxser.com.ar">Empresas</option>
+            <option value="compras@maxser.com.ar">Compras</option>
+            <option value="braianvargas1616@gmail.com">Mio</option>
+          </select>
+          <span class="input-group-text">
+            <i class="bi bi-caret-down-fill"></i>
+          </span>
+        </div><br>
+        <div class="mb-3 w-50 m-auto">
+          <label for="exampleFormControlInput1" class="form-label text-white">Nombre</label>
+          <input type="text" name="clientName" class="form-control" id="exampleFormControlInput1" placeholder="Nombre">
+        </div><br>
+        <div class="mb-3 w-50 m-auto">
+          <label for="exampleFormControlInput1" class="form-label text-white">Direccion de correo</label>
+          <input type="email" name="email" class="form-control" id="exampleFormControlInput1" placeholder="usuario@gmail.com">
+        </div><br>
+        <div class="mb-3 w-50 m-auto">
+          <label for="exampleFormControlInput1" class="form-label text-white">Asunto</label>
+          <input type="text" name="subject" class="form-control" id="exampleFormControlInput1" placeholder="Asunto - Motivo">
+        </div><br>
+        <div class="mb-3 w-50 m-auto">
+          <label for="exampleFormControlTextarea1" class="form-label text-white">Redactar duda o reclamo</label>
+          <textarea name="emailBody" class="form-control" id="exampleFormControlTextarea1" rows="7"></textarea>
+        </div>
+        
+        <div class="input-group mt-3 w-50 m-auto">
+          <input type="submit" class="form-control btn btn-orange">
+        </div> 
+    </form>
     </div>
     <div data-aos="fade-in" data-aos-offset="450" data-aos-easing="ease-out-sine" class="container row m-auto">
       
